@@ -8,7 +8,6 @@
 
 namespace trntv\aceeditor;
 
-use devlity\AceEditorAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;

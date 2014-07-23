@@ -1,5 +1,5 @@
 {
-    "name": "devlity/yii2-aceeditor",
+    "name": "trntv/yii2-aceeditor",
     "description": "Yii2 ajax.org Ace Editor widget",
     "keywords": ["yii", "aceeditor", "code editor"],
     "type": "yii2-extension",

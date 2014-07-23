@@ -1,0 +1,20 @@
+{
+    "name": "devlity/yii2-aceeditor",
+    "description": "Yii2 ajax.org Ace Editor widget",
+    "keywords": ["yii", "aceeditor", "code editor"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Eugine Terentev",
+            "email": "eugine@terentev.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": { "trntv\\aceeditor\\": "" }
+    }
+}

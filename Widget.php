@@ -44,7 +44,6 @@ class Widget extends InputWidget{
 
         $textarea_var = 'acetextarea_'.$editor_id;
         $this->getView()->registerJs("
-            var {$textarea_var} = $('#{$this->options['id']}').hide();
             {$editor_var}.getSession().setValue({$textarea_var}.val());
             {$editor_var}.getSession().on('change', function(){
                 {$textarea_var}.val({$editor_var}.getSession().getValue());

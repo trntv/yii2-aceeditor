@@ -15,11 +15,11 @@ trntv\aceeditor\Widget::widget([
 	// or just for input field
 	'name' => 'my_input_name',
 
-    'mode'=>'mode' // programing language mode. Default "html"
-    'mode'=>'mode' // editor theme. Default "github"
+    'mode'=>'html' // programing language mode. Default "html"
+    'theme'=>'github' // editor theme. Default "github"
 
 	// Editor container options
-	'conatinerOptions' => [
+	'containerOptions' => [
 		'toolbar' => false,
 		'css' => 'wym.css',
 	],
@@ -47,13 +47,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require devlity/yii2-aceeditor "*"
+php composer.phar require trntv/yii2-aceeditor "*"
 ```
 
 or add
 
 ```
-"devlity/yii2-aceeditor": "*"
+"trntv/yii2-aceeditor": "*"
 ```
 
 to the require section of your `composer.json` file.

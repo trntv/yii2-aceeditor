@@ -42,9 +42,8 @@ class Widget extends InputWidget{
         $this->getView()->registerJs("{$editor_var}.setTheme(\"ace/theme/{$this->theme}\")");
         $this->getView()->registerJs("{$editor_var}.getSession().setMode(\"ace/mode/{$this->mode}\")");
 
-        $textarea_var = 'acetextarea_'.$editor_id;
+        $textarea_var = "$('textarea#".$editor_id."')";
         $this->getView()->registerJs("
-            var {$textarea_var} = $('#{$this->options['id']}').hide();
             {$editor_var}.getSession().setValue({$textarea_var}.val());
             {$editor_var}.getSession().on('change', function(){
                 {$textarea_var}.val({$editor_var}.getSession().getValue());

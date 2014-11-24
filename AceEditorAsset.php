@@ -14,10 +14,7 @@ class AceEditorAsset extends AssetBundle{
     /**
      * @inheritdoc
      */
-    public function init(){
-        $this->sourcePath = __DIR__.'/assets/ace-builds/src-min-noconflict';
-        parent::init();
-    }
+    public $sourcePath = '@bower/ace-builds/src-min-noconflict';
 
     /**
      * @inheritdoc

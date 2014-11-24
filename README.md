@@ -1,44 +1,6 @@
 Ace Editor Widget For Yii2
 =======================
 
-Usage
------------------------
-
-Using model
-
-```php
-trntv\aceeditor\Widget::widget([
-	// You can either use it for model attribute
-	'model' => $my_model,
-	'attribute' => 'my_field',
-
-	// or just for input field
-	'name' => 'my_input_name',
-
-    'mode'=>'html' // programing language mode. Default "html"
-    'theme'=>'github' // editor theme. Default "github"
-
-	// Editor container options
-	'containerOptions' => [
-		'toolbar' => false,
-		'css' => 'wym.css',
-	],
-]);
-```
-
-With active field
-
-```php
-$form->field($model, 'field', ['enableClientValidation'=>false])
-    ->widget(
-        'trntv\aceeditor\Widget',
-        [
-            'mode' => 'mode',
-            ...
-        ]
-    )
-```
-
 Installation
 ------------
 
@@ -57,3 +19,35 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+Usage
+-----------------------
+
+Using model
+
+```php
+trntv\aceeditor\AceEditor::widget([
+	// You can either use it for model attribute
+	'model' => $my_model,
+	'attribute' => 'my_field',
+
+	// or just for input field
+	'name' => 'my_input_name',
+
+    'mode'=>'html' // programing language mode. Default "html"
+    'theme'=>'github' // editor theme. Default "github"
+]);
+```
+
+With active field
+
+```php
+$form->field($model, 'field')->widget(
+        'trntv\aceeditor\Aceeditor',
+        [
+            'mode'=>'html' // programing language mode. Default "html"
+			'theme'=>'github' // editor theme. Default "github"
+        ]
+    )
+```
+Lists of all available modes and themes see [here](https://github.com/ajaxorg/ace)

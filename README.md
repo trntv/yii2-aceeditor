@@ -34,7 +34,7 @@ trntv\aceeditor\AceEditor::widget([
 	// or just for input field
 	'name' => 'my_input_name',
 
-    'mode'=>'html' // programing language mode. Default "html"
+    'mode'=>'html', // programing language mode. Default "html"
     'theme'=>'github' // editor theme. Default "github"
 ]);
 ```
@@ -43,9 +43,9 @@ With active field
 
 ```php
 $form->field($model, 'field')->widget(
-        'trntv\aceeditor\Aceeditor',
+        'trntv\aceeditor\AceEditor',
         [
-            'mode'=>'html' // programing language mode. Default "html"
+            'mode'=>'html', // programing language mode. Default "html"
 			'theme'=>'github' // editor theme. Default "github"
         ]
     )

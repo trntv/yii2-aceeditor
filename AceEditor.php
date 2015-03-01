@@ -28,7 +28,9 @@ class AceEditor extends InputWidget{
     /**
      * @var array Div options
      */
-    public $containerOptions = [];
+    public $containerOptions = [
+        'style' => 'width: 100%; min-height: 400px'
+    ];
 
     /**
      * @inheritdoc
@@ -50,7 +52,6 @@ class AceEditor extends InputWidget{
                 {$textarea_var}.val({$editor_var}.getSession().getValue());
             });
         ");
-        Html::addCssStyle($this->containerOptions, 'width: 100%; min-height: 400px');
         Html::addCssStyle($this->options, 'display: none');
         $this->containerOptions['id'] = $editor_id;
         $this->getView()->registerCss("#{$editor_id}{position:relative}");

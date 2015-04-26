@@ -3,7 +3,7 @@ Ace Editor Widget For Yii2
 
 Demo
 ----
-Since this package was created as a part of [yii2-starter-kit](https://github.com/trntv/yii2-starter-kit) it's demo can be found in starter kit demo (here)[http://backend.yii2-starter-kit.terentev.net/widget-menu/create]
+Since this package was created as a part of [yii2-starter-kit](https://github.com/trntv/yii2-starter-kit) it's demo can be found in starter kit demo [here](http://backend.yii2-starter-kit.terentev.net/widget-menu/create)
 
 Installation
 ------------

@@ -3,13 +3,13 @@ Ace Editor Widget For Yii2
 
 About
 -----
-It is AceEditor integration for Yii2 framework.
+It is (Ace Editor)[https://ace.c9.io/#nav=about] integration for Yii2 framework.
 
 Demo
 ----
 Since this package was created as a part of [yii2-starter-kit](https://github.com/trntv/yii2-starter-kit) it's demo can be found in starter kit demo [here (login: webmaster, password: webmaster)](http://backend.yii2-starter-kit.terentev.net/widget-menu/create)
 
-AceEditor demo can be found [here] (https://ace.c9.io/#nav=about)
+Ace Editor demo can be found [here] (https://ace.c9.io/#ace_editor_demo=&nav=about)
 
 Installation
 ------------

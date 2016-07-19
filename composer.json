@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "~2.0",
-        "bower-asset/ace-builds": "~1.1.8"
+        "bower-asset/ace-builds": "~1.2.3"
     },
     "autoload": {
         "psr-4": {

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zein
- * Date: 7/9/14
- * Time: 10:05 PM
- */
 
 namespace trntv\aceeditor;
 
@@ -12,7 +6,13 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;
 
-class AceEditor extends InputWidget{
+/**
+ * Class AceEditor
+ * @package trntv\aceeditor
+ * @author Eugene Terentev <eugene@terentev.net>
+ */
+class AceEditor extends InputWidget
+{
     /**
      * @var string Programming Language Mode
      */
@@ -35,16 +35,17 @@ class AceEditor extends InputWidget{
     /**
      * @inheritdoc
      */
-    public function init(){
+    public function init()
+    {
         parent::init();
         AceEditorAsset::register($this->getView());
         $editor_id = $this->getId();
-        $editor_var = 'aceeditor_'.$editor_id;
+        $editor_var = 'aceeditor_' . $editor_id;
         $this->getView()->registerJs("var {$editor_var} = ace.edit(\"{$editor_id}\")");
         $this->getView()->registerJs("{$editor_var}.setTheme(\"ace/theme/{$this->theme}\")");
         $this->getView()->registerJs("{$editor_var}.getSession().setMode(\"ace/mode/{$this->mode}\")");
 
-        $textarea_var = 'acetextarea_'.$editor_id;
+        $textarea_var = 'acetextarea_' . $editor_id;
         $this->getView()->registerJs("
             var {$textarea_var} = $('#{$this->options['id']}').hide();
             {$editor_var}.getSession().setValue({$textarea_var}.val());
@@ -60,7 +61,8 @@ class AceEditor extends InputWidget{
     /**
      * @inheritdoc
      */
-    public function run(){
+    public function run()
+    {
         $content = Html::tag('div', '', $this->containerOptions);
         if ($this->hasModel()) {
             $content .= Html::activeTextarea($this->model, $this->attribute, $this->options);

@@ -3,13 +3,13 @@ Ace Editor Widget For Yii2
 
 About
 -----
-It is (Ace Editor)[https://ace.c9.io/#nav=about] integration for Yii2 framework.
+It is [Ace Editor](https://ace.c9.io/#nav=about) integration for Yii2 framework.
 
 Demo
 ----
-Since this package was created as a part of [yii2-starter-kit](https://github.com/trntv/yii2-starter-kit) it's demo can be found in starter kit demo [here (login: webmaster, password: webmaster)](http://backend.yii2-starter-kit.terentev.net/widget-menu/create)
+Since this package was created as a part of (Yii2 Starter Kit)[yii2-starter-kit](https://github.com/trntv/yii2-starter-kit) it's demo can be found in starter kit demo [here](http://backend.yii2-starter-kit.terentev.net/widget-menu/create) (login: webmaster, password: webmaster)
 
-Ace Editor demo can be found [here] (https://ace.c9.io/#ace_editor_demo=&nav=about)
+Ace Editor demo can be found [here](https://ace.c9.io/#ace_editor_demo=&nav=about)
 
 Installation
 ------------
@@ -19,13 +19,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require trntv/yii2-aceeditor "*"
+php composer.phar require trntv/yii2-aceeditor
 ```
 
 or add
 
 ```
-"trntv/yii2-aceeditor": "*"
+"trntv/yii2-aceeditor": "^2.0.0"
 ```
 
 to the require section of your `composer.json` file.

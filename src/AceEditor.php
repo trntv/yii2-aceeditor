@@ -12,7 +12,12 @@ use yii\widgets\InputWidget;
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class AceEditor extends InputWidget
-{
+{   
+     /**
+     * @var boolean Read-only mode on/off (false=off - default)
+     */
+    public $readOnly = false;
+    
     /**
      * @var string Programming Language Mode
      */
@@ -44,6 +49,7 @@ class AceEditor extends InputWidget
         $this->getView()->registerJs("var {$editor_var} = ace.edit(\"{$editor_id}\")");
         $this->getView()->registerJs("{$editor_var}.setTheme(\"ace/theme/{$this->theme}\")");
         $this->getView()->registerJs("{$editor_var}.getSession().setMode(\"ace/mode/{$this->mode}\")");
+        $this->getView()->registerJs("{$editor_var}.getSession().setReadOnly({$this->readOnly})");
 
         $textarea_var = 'acetextarea_' . $editor_id;
         $this->getView()->registerJs("

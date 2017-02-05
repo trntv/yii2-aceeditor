@@ -45,7 +45,8 @@ trntv\aceeditor\AceEditor::widget([
 	'name' => 'my_input_name',
 
     'mode'=>'html', // programing language mode. Default "html"
-    'theme'=>'github' // editor theme. Default "github"
+    'theme'=>'github', // editor theme. Default "github"
+    'readOnly'=>'true' // Read-only mode on/off = true/false. Default "false"
 ]);
 ```
 
@@ -56,7 +57,8 @@ $form->field($model, 'field')->widget(
         'trntv\aceeditor\AceEditor',
         [
             'mode'=>'html', // programing language mode. Default "html"
-			'theme'=>'github' // editor theme. Default "github"
+            'theme'=>'github', // editor theme. Default "github"
+            'readOnly'=>'true' // Read-only mode on/off = true/false. Default "false"
         ]
     )
 ```

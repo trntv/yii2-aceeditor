@@ -6,14 +6,27 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Eugine Terentev",
-            "email": "eugine@terentev.net"
+            "name": "Eugene Terentev",
+            "email": "eugene@terentev.net"
         }
     ],
-    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "ajaxorg/ace-builds",
+                "version": "1.2.8",
+                "source": {
+                    "url": "https://github.com/ajaxorg/ace-builds",
+                    "type": "git",
+                    "reference": "tag/v1.2.8"
+                }
+            }
+        }
+    ],
     "require": {
         "yiisoft/yii2": "^2.0.0",
-        "bower-asset/ace-builds": "^1.2.3"
+        "ajaxorg/ace-builds": "^1.2.8"
     },
     "autoload": {
         "psr-4": {
